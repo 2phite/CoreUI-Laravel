@@ -33,7 +33,7 @@ Route::get('/index.html', function () {
 });
 
 Route::get('/colors', function () {
-    return view('admin.colors');
+    return view('theme.colors');
 })->name('colors');
 
 Route::get('/colors.html', function () {
@@ -41,9 +41,25 @@ Route::get('/colors.html', function () {
 });
 
 Route::get('/typography', function () {
-    return view('admin.typography');
+    return view('theme.typography');
 })->name('typography');
 
 Route::get('/typography.html', function () {
     return redirect()->route('typography');
+});
+
+Route::get('/charts', function () {
+    return view('components.charts');
+})->name('charts');
+
+Route::get('/charts.html', function () {
+    return redirect()->route('charts');
+});
+
+Route::get('/widgets', function () {
+    return view('components.widgets');
+})->name('widgets');
+
+Route::get('/widgets.html', function () {
+    return redirect()->route('widgets');
 });
