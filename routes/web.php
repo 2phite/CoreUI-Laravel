@@ -32,6 +32,14 @@ Route::get('/index.html', function () {
     return redirect()->route('admin');
 });
 
+Route::get('/colors', function () {
+    return view('admin.colors');
+})->name('colors');
+
+Route::get('/colors.html', function () {
+    return redirect()->route('colors');
+});
+
 Route::get('/typography', function () {
     return view('admin.typography');
 })->name('typography');
