@@ -17,7 +17,7 @@
                 <i class="nav-icon icon-drop"></i> Colors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="typography">
+              <a class="nav-link" href="typography.html">
                 <i class="nav-icon icon-pencil"></i> Typography</a>
             </li>
             <li class="nav-title">Components</li>

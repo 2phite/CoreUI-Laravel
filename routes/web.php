@@ -11,14 +11,31 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/admin', function () {
     return view('admin.home');
+})->name('admin');
+
+Route::get('/admin.html', function () {
+    return redirect()->route('admin');
+});
+
+Route::get('/', function () {
+    // return view('welcome');
+    return redirect()->route('admin');
+});
+
+Route::get('/index', function () {
+    return redirect()->route('admin');
+});
+
+Route::get('/index.html', function () {
+    return redirect()->route('admin');
 });
 
 Route::get('/typography', function () {
     return view('admin.typography');
+})->name('typography');
+
+Route::get('/typography.html', function () {
+    return redirect()->route('typography');
 });
