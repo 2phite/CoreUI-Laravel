@@ -63,3 +63,7 @@ Route::get('/widgets', function () {
 Route::get('/widgets.html', function () {
     return redirect()->route('widgets');
 });
+
+Route::get('/demo', function () {
+    return view('components.demo');
+})->name('demo');

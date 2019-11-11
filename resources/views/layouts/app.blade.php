@@ -26,6 +26,7 @@
 
      <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('scripts')
     
     <!-- Include the script only on homepage -->
     @if(Request::path() === 'admin')
